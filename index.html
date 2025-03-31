@@ -1,85 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NopeBot - WhatsApp Bot</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
   <style>
+    /* Overall page styling */
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
-      line-height: 1.6;
-      text-align: center;
-    }
-    header {
-      padding: 20px;
-      background: #333;
+      background: linear-gradient(135deg, #007BFF, #28a745);
       color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
     }
-    section {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
+    /* Main container styling */
+    .container {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      max-width: 600px;
+      width: 90%;
     }
-    a {
-      color: #007BFF;
-      text-decoration: none;
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
-    .features-list {
-      list-style-type: none;
-      padding: 0;
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      line-height: 1.5;
     }
-    .features-list li {
-      padding: 8px 0;
-      font-size: 18px;
+    /* Skill section styling */
+    .skill-container {
+      margin: 30px 0;
     }
-    .button {
-      display: inline-block;
-      padding: 12px 20px;
-      background-color: #333;
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
+    .skill-label {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    .progress-bar {
+      width: 100%;
+      background: rgba(255,255,255,0.3);
       border-radius: 5px;
-      margin-top: 20px;
+      overflow: hidden;
+      height: 30px;
+      margin-bottom: 20px;
     }
-    .button:hover {
-      background-color: #555;
+    .progress {
+      height: 100%;
+      width: 80%; /* Adjust this percentage to match your skill level */
+      background: #fff;
+      transition: width 0.5s ease;
+    }
+    /* Language checkbox section styling */
+    .language-boxes {
+      text-align: left;
+      margin: 20px auto;
+      max-width: 300px;
+    }
+    .language-boxes .box-label {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+    .language-boxes input[type="checkbox"] {
+      margin-right: 10px;
+      transform: scale(1.2);
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>NopeBot - WhatsApp Bot</h1>
-  </header>
-  <section>
-    <p>Welcome to **NopeBot**, a powerful WhatsApp bot designed to make your life easier with a variety of commands! Whether you want to play games, manage users, or simply interact with the bot, NopeBot has you covered.</p>
-
-    <h2>Available Commands:</h2>
-    <ul class="features-list">
-      <li>📋 **General Commands**</li>
-      <li>`!ping` - Check bot responsiveness.</li>
-      <li>`!botinfo` - Get bot uptime.</li>
-      <li>`!status` - Check bot status.</li>
-      <li>`!playlimit` - Check your current play limit.</li>
-      <li>🎮 **Game Commands**</li>
-      <li>`!tictactoe` or `!ttt` - Start a Tic-Tac-Toe game.</li>
-      <li>`!guessflag` - Start a flag guessing game.</li>
-      <li>`!tebakgambar` - Start a drawing guessing game.</li>
-      <li>`!caklontong` - Start a Cak Lontong game.</li>
-      <li>⚙️ **Admin Commands** (for admins only)</li>
-      <li>`!warn @user <reason>` - Warn a user (3 warnings = kick).</li>
-      <li>`!kick @user` - Kick a user from the group.</li>
-      <li>`!delwarn @user` - Remove a warning from a user.</li>
-      <li>`!listwarn @user` - List warnings for a user.</li>
-      <li>`!delmsg` - Delete a quoted message.</li>
-    </ul>
-
-    <h2>Privacy and Data Security</h2>
-    <p>Your privacy is important to us. NopeBot does not collect personal data and only processes information relevant to the tasks requested. For more details, check our <a href="https://github.com/ordinarysteve/ordinarysteve.github.io/blob/main/privacy-policy.md" target="_blank">Privacy Policy</a>.</p>
-  </section>
+  <div class="container">
+    <h1>Welcome to My Site</h1>
+    <p>
+      Hi, I'm Ordinary Steve. I'm still a beginner about coding but I'm passionate to learn coding and make a project 
+    </p>
+    
+    <!-- Skill Level Section -->
+    <div class="skill-container">
+      <div class="skill-label">Coding Skill Level: Advanced</div>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+    
+    <!-- Languages Learned Section -->
+    <div class="language-boxes">
+      <div class="skill-label">Languages Learned</div>
+      <label class="box-label">
+        <input type="checkbox"> HTML
+      </label>
+      <label class="box-label">
+        <input type="checkbox"> CSS
+      </label>
+      <label class="box-label">
+        <input type="checkbox"> JavaScript
+      </label>
+      <label class="box-label">
+        <input type="checkbox"> Python
+      </label>
+      <label class="box-label">
+        <input type="checkbox"> [Other Language]
+      </label>
+    </div>
+  </div>
 </body>
 </html>
